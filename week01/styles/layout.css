@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    line-height:1.5;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    margin: 2.5rem 0;
+
+}
+h1 {
+    font-size: 3rem;
+}
+
+
+.header{
+    background-color: burlywood;
+    height: 15rem;
+    padding: 2rem
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #c7d6cf;
+
+}
+
+.nav a {
+    padding: 1rem 0;
+    text-decoration: none;
+    color: black;
+
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    height: 30rem;
+}
+
+.main-content {
+    background-color: aqua;
+    padding: 1rem;
+}
+
+.aside-content {
+    background-color: aquamarine;
+    padding: 1rem;
+}
+
+.footer {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+}
