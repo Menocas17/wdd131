@@ -139,5 +139,36 @@ header span {
     padding-top: 1rem;
 }
 
+.resources-menu {
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+.resources-menu a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.resources-menu a:hover {
+    color: #2b1cd7;
+    font-size: 2rem;
+}
+
+/* Styling the footer */
+
+.footer {
+    background-color: #274d6d;
+    height: 10rem;
+    color: #FFFF;
+    text-align: center;
+}
+
+.last-modification{
+ color: #fcf671;
+}
+
+
 
 

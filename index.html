@@ -10,16 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
+    <script src="/scripts/getdates.js" defer></script>
+    <title>WDD 131: Dynamic Web Fundamental - Rodolfo Menocal</title>
 <body>
     <header>
         <div class="main-header"></div>
         <h1>WDD 131: Dynamic Web Fundamentals - <span>Rodolfo Menocal</span></h1>
 
         <nav  class="nav-bar">
-            <a href="www.linkedin.com/in/rodolfo-menocal-b16696244">LinkedIn</a>
-            <a href="https://byui.instructure.com/">I-Learn</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p4#p4">Scripture</a>
-            <a href="#">Final Project</a>
+            <a href="www.linkedin.com/in/rodolfo-menocal-b16696244" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://byui.instructure.com/" target="_blank" rel="noopener noreferrer">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p4#p4" target="_blank" rel="noopener noreferrer">Scripture</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Final Project</a>
         </nav>
 
     </header>
@@ -56,13 +58,18 @@
 
             <section class="card">
                 <h2>Web Dev Resources</h2>
-                <ul>
-                    <li><a href="https://www.udemy.com">Udemy</a></li>
-                    <li><a href="https://www.w3schools.com">W3 school</a></li>
-                    <li><a href="https://chatgpt.com">ChatGPT</a></li>
-                    <li><a href="https://fonts.google.com">Google Fonts</a></li>
-                    <li><a href="https://imagecolorpicker.com/color-code/2596be">Color Picker</a></li>
-                </ul>
+
+                <div class="resources-menu">
+                    <ul>
+                        <li><a href="https://www.udemy.com" target="_blank" rel="noopener noreferrer">Udemy</a></li>
+                        <li><a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3 school</a></li>
+                        <li><a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">ChatGPT</a></li>
+                        <li><a href="https://fonts.google.com" target="_blank" rel="noopener noreferrer">Google Fonts</a></li>
+                        <li><a href="https://imagecolorpicker.com/color-code/2596be" target="_blank" rel="noopener noreferrer">Color Picker</a></li>
+                    </ul>
+
+                </div>
+                
             </section>
 
         </div>
@@ -71,9 +78,12 @@
 
     <footer>
 
-        <p>©<span id="currentyear"></span> - Rodolfo Menocal - Nicaragua</p>
-        <p id="lastModified"></p>
+        <div class="footer">
+            <p>©<span id="currentyear"></span>  👨🏻‍💻 Rodolfo Menocal 👨🏻‍💻  Nicaragua</p>
+            <p class="last-modification">Last Modification: <span id="lastModified"></span></p>
 
+        </div>
+        
     </footer>
 </body>
 </html>
