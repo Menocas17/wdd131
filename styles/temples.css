@@ -20,21 +20,13 @@ body {
 }
 
 
-h1, h2 {
-    font-weight: 500;
-}
-
-h2 {
-    font-size: 2.5rem;
-}
-
 img {
     max-width: 100%;
     display:block
 }
 
 figure {
-    margin: 3rem 0;
+    margin: 0;
     text-align: center;
     color: var(--deepViolet)
 }
@@ -43,33 +35,50 @@ figure {
     width: min(90%, 120rem);
     margin: 0 auto
 }
-
+/* 
+Styling the header */
 .nav-menu-container {
     background-color: var(--deepViolet);
     color: var(--white);
 }
 
 .nav-menu-container h1 {
+    font-weight: 700;
     padding: 2rem;
     margin: 0;
 }
 
+/* class  to be toggle when the user press the ham button */
+.open-title {
+    display: none;
+}
+
 .navegation-menu{
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+}
+
+/* class  to be toggle when the user press the ham button */
+.open {
+    display: flex;
 }
 
 .navegation-menu a {
     color: var(--white);
     text-decoration: none;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
+ 
+}
+
+.navegation-menu a:first-child {
+    margin-top: 6rem;
 }
 
 .navegation-menu a:last-child {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .navegation-menu a:hover{
@@ -82,18 +91,45 @@ figure {
 	border: 0;
 	background: none;
 	color: var(--white);
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
 }
 
 #menu::before {
     content: '☰';
 }
 
+/* class  to be toggle when the user press the ham button */
+#menu.open-button::before{
+    content: 'X';
+}
 
-.wrap-menu-display {
-    display: flex;
-    justify-content: space-between;
+/* Styling the main  */
+
+main h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
 }
 
 
+.footer {
+    background-color: var(--deepViolet);
+    height: 10rem;
+    color: #FFFF;
+    text-align: center;
+    padding: 1rem;
+}
+
+.last-modification{
+ color: #fcf671;
+}
 
 

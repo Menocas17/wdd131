@@ -1,0 +1,40 @@
+@media (min-width: 640px) { 
+    .nav-menu-container h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+@media (min-width: 950px) { 
+    #menu {
+        display: none;
+    }
+
+    .navegation-menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navegation-menu a:first-child {
+        margin: 0;
+    }
+
+    .navegation-menu a:last-child {
+        margin: 0;
+    }
+
+    .nav-menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .nav-menu-container h1 {
+        font-size: 5rem;
+        font-weight: 700;
+    }
+
+
+}
