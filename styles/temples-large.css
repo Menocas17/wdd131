@@ -16,6 +16,10 @@
         flex-direction: row;
     }
 
+    .navegation-menu a {
+        padding: 2rem;
+    }
+
     .navegation-menu a:first-child {
         margin: 0;
     }
