@@ -25,7 +25,8 @@
     }
 
     .weather-section h2::after {
-        content: " \b \b \b⛅";
+        content: "⛅";
+        padding: 3.4rem;
     }
 
     section h2 {
