@@ -1,0 +1,134 @@
+:root {
+
+    /* Colors */
+    --Space-cadet-blue: #1D2F60;
+    --Maastricht-blue: #09132a;
+    --White: #fff;
+    --Deep-moos-green: #306B4C;
+
+    /* fonts */
+    --title-font: "Lexend", sans-serif;
+    --main-font: "Roboto", sans-serif;
+
+}
+
+/* Globals */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 1.6rem;
+    line-height:1.5;
+}
+
+img {
+    width: 100%;
+    max-height: 80rem;
+    display:block;
+   
+}
+
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto
+}
+h1, h2{
+    font-weight: 900;
+    font-family: var(--title-font);
+    margin: 2.5rem 0;
+}
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+/* Styling the header  */
+
+header {
+    background-color: var(--Space-cadet-blue);
+}
+
+h1 {
+    color: var(--White);
+    margin: 0;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Styling the hero img and background color*/
+
+.background-color {
+    background-color: var(--Deep-moos-green);
+    border-bottom: solid 1rem var(--Space-cadet-blue);
+}
+
+.hero {
+    padding-top: 1.5rem;
+}
+
+
+/* Styling the data and weather section */
+ul{
+    list-style-type: none;
+    padding-left: 0;
+ 
+}
+
+
+
+.data-list, .weather-list{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+.left-list {
+    text-align: right;
+    margin-left: 2rem;
+}
+
+.left-weather{
+    margin-left: 3rem;
+}
+
+.right-list {
+    text-align: left;
+}
+
+section {
+    padding: 2rem 0;
+}
+section:first-of-type {
+    padding-bottom: 4rem;
+}
+
+.icon {
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.data-section {
+    border-bottom: 2px solid #5d5e5f2b;
+}
+
+
+/* Styling the footer */
+
+.footer {
+    background-color: var(--Space-cadet-blue);
+    height: 10rem;
+    color: #FFFF;
+    text-align: center;
+    padding: 1rem;
+}

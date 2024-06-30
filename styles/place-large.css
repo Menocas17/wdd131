@@ -1,0 +1,45 @@
+@media (min-width: 1200px) { 
+    
+    .section-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .data-section {
+        position: absolute;
+        top: 20rem;
+        left: 6rem;
+        padding:1rem;
+        background-color: #ffffffaf;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .weather-section {
+        position: absolute;
+       bottom: 15rem;
+        right: 6rem;
+        padding: 1rem;
+        background-color: #ffffffaf;
+    }
+
+    .weather-section h2::after {
+        content: " \b \b \b⛅";
+    }
+
+    section h2 {
+        
+        background-color: #306b4c;
+        margin: 0 5rem 1rem -3rem;
+        padding: 1rem 0 0 4rem;
+        color: var(--White);
+        text-align: left;
+        width: 30rem;
+    
+        
+        
+    }
+
+  
+}

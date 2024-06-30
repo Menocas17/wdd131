@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil Wheather</title>
+    <meta name="description" content="This a site that shows you general information about Brazil like it's population, time zone etcc.. but if focus on showing you the actual weather conditions">
+    <meta name="author" content="Rodolfo Menocal">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Brazil</h1>
+    </header>
+    
+    <main>
+
+        <div class="main-container">
+            <div class="background-color">
+                <div class="hero">
+                    <picture>
+                        <source srcset="images/hero-large.webp" media="(min-width: 640px)">
+                        <img  src="images/hero-small.webp" alt="This is a photo of Brazil, Rio do Jainero">
+                    </picture>
+                </div>
+            
+            </div>
+    
+           
+            <section class="data-section">
+                <h2>Data</h2>
+        
+    
+                <div class="data-list">
+                <ul class="left-list">
+                    <li><strong>Area: </strong></li>
+                    <li><strong>Population:</strong></li>
+                    <li><strong>Capital:</strong></li>
+                    <li><strong>Languagues:</strong></li>
+                    <li><strong>Currency:</strong></li>
+                    <li><strong>Time Zones:</strong></li>
+                    <li><strong>Calling Code:</strong></li>
+                    <li><strong>Internet TLD:</strong></li>
+                </ul>
+    
+                <ul class="right-list">
+                    <li>8,514,215 km2</li>
+                    <li>203,080,756</li>
+                    <li>Brasilia</li>
+                    <li>Portuguese</li>
+                    <li>Real Brasileiro BRL</li>
+                    <li>UTC−03:00 (RJ)</li>
+                    <li>+55</li>
+                    <li>.br</li>
+                </ul>
+                
+                </div>
+            </section>
+            <section class="weather-section">
+                <h2>Weather</h2>
+                <div class="icon">
+                    <img src="images/weather-icon.svg" alt="Weather's icon">
+                </div>
+                
+    
+                <div class="weather-list">
+                    <ul class="left-list left-weather">
+                        <li><strong>Temperature: </strong></li>
+                        <li><strong>Conditions: </strong></li>
+                        <li><strong>Wind: </strong></li>
+                        <li><strong>Wind Child: </strong></li>
+                    </ul>
+    
+                    <ul class="right-list">
+                        <li><span id="temperature">23</span> °C (Rio do Janiero)</li>
+                        <li>Cloudy</li>
+                        <li><span id="wind-speed">16</span> Km</li>
+                        <li><span id="wind-child"></span></li>
+                    </ul>
+                </div>
+            </section>
+
+            
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <p>©<span id="currentyear"></span>  👨🏻‍💻 Rodolfo Menocal 👨🏻‍💻  Nicaragua</p>
+            <p class="last-modification">Last Modification: <span id="lastModified"></span></p>
+    
+        </div>
+    </footer>
+</body>
+</html>
