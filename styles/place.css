@@ -93,7 +93,7 @@ ul{
 
 }
 
-.left-list {
+.left-list{
     text-align: right;
     margin-left: 2rem;
 }
@@ -131,4 +131,25 @@ section:first-of-type {
     color: #FFFF;
     text-align: center;
     padding: 1rem;
+}
+
+th {
+    font-weight: 900;
+    font-family: var(--title-font);
+    margin: 2.5rem 0;
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+td {
+    padding: 0 .6rem;
+
+}
+
+.left {
+    text-align: right;
+}
+
+table {
+    margin: 0 auto;
 }
