@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="This is an album web page that contains photos of the temples of the church of Jesus Crhisto of latter day Saints">
+    <meta name="author" content="Rodolfo Menocal">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="nav-menu-container">
+            <div class="title">
+                <img class="icon" src="images/iglesia.png" alt="Salt Lake temple icon">
+                <h1>Temple Album</h1>
+            </div>
+        
+            <button id="menu" aria-label="Menu button"></button>
+            <nav class="navegation-menu">
+                <a href="#" id="home">Home</a>
+                <a href="#" id="old">Old</a>
+                <a href="#" id="new">New</a>
+                <a href="#" id="large">Large</a>
+                <a href="#" id="small">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 id="gallery-page">Home</h2>
+        
+        <div id=gallery>
+
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <p>©<span id="currentyear"></span>  👨🏻‍💻 Rodolfo Menocal 👨🏻‍💻  Nicaragua</p>
+            <p class="last-modification">Last Modification: <span id="lastModified"></span></p>
+
+        </div>
+            
+    </footer>
+</body>
+</html>
+
