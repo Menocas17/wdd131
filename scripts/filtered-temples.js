@@ -146,7 +146,7 @@ createTempleCards(temples);
 
 
 // Creating the logic to manage the menu buttons
-const galleryTittle = document.querySelector("#gallery-page")
+const galleryTittle = document.querySelector("#gallery-title");
 const homeButton = document.querySelector("#home");
 const oldButton = document.querySelector("#old");
 const newButton = document.querySelector("#new");
@@ -161,22 +161,26 @@ function menuButtonClick (buttonId) {
             break;
 
         case 'old':
+            galleryTittle.textContent = "Older Temples"
             gallery.innerHTML = ''
             createTempleCards(temples.filter(temple => temple.dedicated.split(',')[0].trim() < 1900))
             break;
 
         case 'new':
+            galleryTittle.textContent = "Newer Temples"
             gallery.innerHTML = ''
             createTempleCards(temples.filter(temple => temple.dedicated.split(',')[0].trim() > 2000))
             break;
                 
         
         case 'large':
+            galleryTittle.textContent = "Larger Temples"
             gallery.innerHTML = ''
             createTempleCards(temples.filter(temple => temple.area > 90000))
             break;
     
         case 'small':
+            galleryTittle.textContent = "Smaller Temples"
             gallery.innerHTML = ''
             createTempleCards(temples.filter(temple => temple.area < 10000))
             break;
