@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Gagalin';
+    src: url('Gagalin-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+:root {
+    --tittleFont : "Gagalin", system-ui;
+    --bodyFont : "Roboto", sans-serif;
+    --mainColor : #4545cc; 
+    --secondaryColor : #8717EB;
+    --contrasColor : #FF914D;
+    --secondaryContrastColor : #fe0074;
+    --lightgrey : #F8F7F8;
+    --grey: #EDECED;
+    --white : #fff;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body {
+    font-family: var(--bodyFont);
+    font-size: 1.6rem;
+    line-height:1.5;
+    margin: 0;
+}
+
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto
+}
+h1, h2, h3 {
+    font-weight: 900;
+    font-family: var(--tittleFont);
+}
+h1 {
+    font-size: 4.4rem;
+    margin: 0;
+}
+
+h2, h3 {
+    color: var(--secondaryColor);
+    margin: 2.5rem 0;
+}
+
+h2 {
+    font-size: 3.6rem;
+
+}
+h3 {
+    font-size: 2.8rem;
+
+}
+
+/* Styling the header */
+
+header {
+    background-color: var(--mainColor);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Sytiling the main and sections */
+
+.domain {
+    font-weight: bold;
+}
+
+.domain-direction {
+    color: var(--secondaryColor);
+}
+
+.color {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.color1 {
+    background-color: var(--mainColor);
+}
+
+.color2 {
+    background-color: var(--secondaryColor);
+}
+
+.color3 {
+    background-color: var(--contrasColor);
+}
+
+.color4 {
+    background-color: var(--secondaryContrastColor);
+}
+
+.color5 {
+    background-color: var(--lightgrey);
+}
+
+.color6 {
+    background-color: var(--grey);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+footer {
+    background-color: var(--mainColor);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    margin: 0; 
+}
