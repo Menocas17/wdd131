@@ -48,7 +48,8 @@
 /* Styling the main */
 
     .hero {
-    background-image: url(../images/hero-large.webp);
+    background-image: url(../images/hero-large-transformed.webp);
+    /* background-image: url(../images/hero-large-transformed-transformed-2.webp); */
     height: 85rem;
     justify-content: flex-end;
 
