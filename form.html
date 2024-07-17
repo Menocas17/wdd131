@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="This a product review survey for the customer to post their thoughs about our products">
+    <meta name="author" content="Rodolfo Menocal">
+    <link rel="stylesheet" href="styles/form-scripts-mobile.css">
+    <link rel="stylesheet" href="styles/form-scripts-desktop.css">
+    <script src="scripts/form-scripts.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>
+            Product Review
+        </h1>
+    </header>
+    <main class="container">
+
+        <form action="review.html" method="get" class="product-form">
+        <div class="form-body">
+
+                <fieldset>
+                    <label>Product Name 
+                        <select name="products" id="productName" required>
+                            <option value="">Select a Product...</option>
+
+                        
+                        </select>
+                    </label>
+    
+                </fieldset>
+                
+
+                
+                <fieldset>
+                    <legend>Overall Rating</legend>
+
+                    <div class="rating">
+                    <label>★<input type="radio" name="stars" id="oneStar" value="1"></label>
+    
+                    <label>★★<input type="radio" name="stars" id="twoStars" value="2"></label>
+                    <label>★★★<input type="radio" name="stars" id="threeStars" value="3"></label>
+                    <label>★★★★<input type="radio" name="stars" id="fourStars" value="4"></label>
+                    <label>★★★★★<input type="radio" name="stars" id="fiveStars" value="5"></label>
+    
+                    </div>
+                    
+                </fieldset>
+              
+                <fieldset>
+                    <label>Date of Installation
+                        <input type="date">
+                    </label>
+                </fieldset>
+                
+
+                <fieldset>
+                    <legend>Which features did you find useful in the product?(Check all that apply)</legend>
+                        
+                    
+    
+                    <label><input type="checkbox" name="durability" id="featureDurability" value="durability">Durability</label>
+                    <label><input type="checkbox" name="ease-of-use" id="feature-ease-of-use" value="ease-of-use">Ease of Use</label>
+                    <label><input type="checkbox" name="performance" id="feature-performance" value="performance">Performance</label>
+                    <label><input type="checkbox" name="design" id="feature-design" value="design">Design</label>
+
+                </fieldset>
+              
+                <fieldset>
+                    <label>Written Review <span>(optional)</span>
+                        <textarea name="written-review" id="written-review" cols="30" rows="10"></textarea></label>
+        
+                </fieldset>
+
+                
+                <fieldset>
+                    <label>Your name <span>(optional)</span>
+                        <input type="text" name="user-name" id="user-name"></label>
+                </fieldset>
+                
+
+                <input type="submit" value="Post Review" id="form-button">
+
+            </div>
+
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <p>©<span id="currentyear"></span>  👨🏻‍💻 Rodolfo Menocal 👨🏻‍💻  Nicaragua</p>
+            <p class="last-modification">Last Modification: <span id="lastModified"></span></p>
+    
+        </div>
+    </footer>
+
+</body>
+</html>

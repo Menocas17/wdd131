@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../styles/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../styles/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Globals */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body {
+    font-family: 'Roboto', sans-serif;;
+    font-size: 1.6rem;
+    line-height:1.5;
+    margin: 0;
+}
+
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto
+}
+
+
+/* 
+Styling the header */
+
+header {
+    background-color: #0C6EB6;
+    color: #FFFF;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 400
+}
+
+/* Styling the review page  */
+
+.reviews-number {
+    font-weight: bold;
+}
+
+.review-completed {
+    background-color: antiquewhite;
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* styling the form */
+
+
+/* general form styling */
+.product-form {
+    background-color: antiquewhite;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+.product-form input,
+.product-form select,
+.product-form textarea,
+.product-form label
+{
+    display: block;
+}
+
+
+
+select, input[type =text], input[type =date] {
+    height: 4rem;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    padding:0;
+    margin-bottom: 2rem;
+}
+
+legend {
+    margin-bottom: .5rem;
+}
+
+/* styling the rating section of the form  */
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+p {
+    margin: 0;
+}
+
+input[type=radio] {
+    margin: 0 auto;
+    transform: scale(1.5);
+}
+
+/* styling the features section of the form  */
+
+label input[type=checkbox] {
+    display: inline-block;
+}
+
+input[type=checkbox] {
+    margin-right: 1rem;
+    transform: scale(1.5);
+
+}
+
+/* styling the optional text  */
+
+span {
+    color: #0C6EB6;
+}
+
+
+/* styling the submit button  */
+
+input[type=submit] {
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 700;
+}
+
+
+
+/* styling the footer  */
+
+.footer {
+    background-color: #0C6EB6;
+    height: 10rem;
+    color: #FFFF;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer span {
+    color: #f9f473;
+}
+
+.last-modification{
+ color: #fcf671;
+}

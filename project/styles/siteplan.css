@@ -78,9 +78,7 @@ header {
     font-weight: bold;
 }
 
-.domain-direction {
-    color: var(--secondaryColor);
-}
+
 
 .color {
     display: inline-block;
