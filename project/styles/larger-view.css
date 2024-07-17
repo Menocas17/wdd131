@@ -5,6 +5,10 @@
         font-size: 5rem;
         margin: 1.5rem 0;
     }
+
+    h3 {
+        font-size: 3.2rem;
+    }
     .logo-name img {
         width: 6rem;
         height: 6rem;
@@ -44,7 +48,7 @@
 /* Styling the main */
 
     .hero {
-    background-image: url(../images/hero-large.jpg);
+    background-image: url(../images/hero-large.webp);
     height: 85rem;
     justify-content: flex-end;
 
@@ -87,6 +91,9 @@
     section:nth-of-type(2){
         
         margin-bottom: 5rem;
+        padding-bottom: 3rem;
+        border-bottom: 2.5px solid var(--grey);
+        
     }   
 
     section {
@@ -116,6 +123,26 @@
     section img {
         width: 45rem;
     }
+
+/* stylign the form  */
+
+form {
+    width: 40%;
+    font-size: 2rem;
+}
+
+form input,
+form select,
+form textarea {
+    font-size: 2rem;
+}
+
+form span {
+    color: var(--secondaryColor);
+    font-size: 1.6rem;
+}
+
+
 
 /* Styling the footer */
 
@@ -147,5 +174,11 @@
     .nav-menu {
         gap: 6rem;
     }
+
+    form {
+        width: 30%;
+        font-size: 2rem;
+    }
+
 
 }

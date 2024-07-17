@@ -5,7 +5,20 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
 
 :root {
@@ -16,7 +29,7 @@
     --contrasColor : #FF914D;
     --secondaryContrastColor : #fe0074;
     --lightgrey : #F8F7F8;
-    --grey: #EDECED;
+    --grey: #ebebeb;
     --white : #fff;
 
 }
@@ -56,6 +69,25 @@ h1 {
 h2 {
     font-size: 2rem;
 }
+
+h3 {
+    font-size: 2.5rem;
+}
+
+.button {
+    text-decoration: none;
+    background-color: var(--secondaryContrastColor);
+    color: var(--white);
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+
+.button:hover{
+    background-color: var(--contrasColor);
+}
+
 
 /* Styling the header */
 
@@ -138,33 +170,6 @@ h2 {
 
 /* Styling the main */
 
-/* 
-
-
-option 1!!
-
-.hero { 
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 90rem;
-    background-image: url(../images/mobile-hero.png);
-    background-size: 100% 100%;  
-    position: relative;
-}
-
-.inscribete-button {
-    margin-bottom: 3rem;
-    text-decoration: none;
-    background-color: var(--contrasColor);
-    color: var(--white);
-    padding: 1rem 2rem;
-    font-size: 2.5rem;
-    font-weight: 700;
-    border-radius: 1rem;
-} */
-
-
 
 main {
     padding-top: 9.5rem;
@@ -175,29 +180,17 @@ main {
     justify-content: center;
     align-items: flex-end;
     height: 90rem;
-    background-image: url(../images/mobile-hero3.png);
+    background-image: url(../images/mobile-hero3.webp);
     background-size: 100% 102%;  
     position: relative;
 }
 
 .inscribete-button {
     margin-bottom: 10rem;
-    text-decoration: none;
-    background-color: var(--contrasColor);
-    color: var(--white);
-    padding: 1rem 2rem;
-    font-size: 2.5rem;
-    font-weight: 700;
-    border-radius: 1rem;
 }
 
-.inscribete-button:hover{
-    background-color: var(--secondaryContrastColor);
-}
 
-section:nth-of-type(1){
-    margin-top: 2rem;
-}
+/* styling the information sections  */
 
 section h2 {
     color: var(--secondaryColor);
@@ -213,11 +206,6 @@ section img {
     margin-bottom: 1.5rem;
 }
 
-section {
-    margin-bottom: 2rem;
-}
-
-
 .bold {
     font-size: 1.6rem;
     font-weight: bold;
@@ -231,19 +219,84 @@ section {
 }
 
 .general-info-section.hotel-info {
-    margin-top: 4rem;
+    margin: 4rem 0;
 }
 
 .general-info-section.hotel-info h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+/* styling the form  */
+
+form {
+    background-color: var(--grey);
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+h3 {
+    text-align: center;
+    margin: 0 0 2rem 0;
+    color: var(--secondaryColor);
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-top: .5rem;
+    height: 40px;
+    font-size: 1.6rem;
+    font-family: var(--bodyFont);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+form span {
+    color: var(--secondaryColor);
+    font-size: 1.2rem;
+}
+
+form select {
+    padding: 0 2rem;
 }
 
 
+
+
+form textarea {
+    height: 10rem;
+    margin-bottom: 0;
+}
+
+input[type=submit] {
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: none;
+    height: auto;
+    width: 70%;
+}
+
+
+
+
+
+/* styling the footer  */
 footer {
     background-color: var(--mainColor);
     color: var(--white);
     text-align: center;
+    margin-top: 5rem;
 }
+
+
 
 .footer {
     display: grid;
