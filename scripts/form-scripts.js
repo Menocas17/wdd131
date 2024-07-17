@@ -1,12 +1,6 @@
-const currentYear = document.querySelector("#currentyear");
-const lastModified = document.querySelector("#lastModified");
+
 const productList = document.querySelector("#productName");
 const formButton = document.querySelector('#form-button');
-
-currentYear.textContent = new Date().getFullYear();
-lastModified.textContent = document.lastModified;
-
-
 
 const products = [
     {

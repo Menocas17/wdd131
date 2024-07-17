@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/form-scripts-mobile.css">
     <link rel="stylesheet" href="styles/form-scripts-desktop.css">
     <script src="scripts/form-scripts.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
         <div class="form-body">
 
                 <fieldset>
-                    <label>Product Name 
+                    <label>Product Name <span>*</span>
                         <select name="products" id="productName" required>
                             <option value="">Select a Product...</option>
 
@@ -36,23 +37,23 @@
 
                 
                 <fieldset>
-                    <legend>Overall Rating</legend>
+                    <legend>Overall Rating <span>*</span></legend>
 
                     <div class="rating">
-                    <label>★<input type="radio" name="stars" id="oneStar" value="1"></label>
+                    <label>★<input type="radio" name="stars" id="oneStar" value="1" required></label>
     
-                    <label>★★<input type="radio" name="stars" id="twoStars" value="2"></label>
-                    <label>★★★<input type="radio" name="stars" id="threeStars" value="3"></label>
-                    <label>★★★★<input type="radio" name="stars" id="fourStars" value="4"></label>
-                    <label>★★★★★<input type="radio" name="stars" id="fiveStars" value="5"></label>
+                    <label>★★<input type="radio" name="stars" id="twoStars" value="2" required></label>
+                    <label>★★★<input type="radio" name="stars" id="threeStars" value="3" required></label>
+                    <label>★★★★<input type="radio" name="stars" id="fourStars" value="4" required></label>
+                    <label>★★★★★<input type="radio" name="stars" id="fiveStars" value="5" required></label>
     
                     </div>
                     
                 </fieldset>
               
                 <fieldset>
-                    <label>Date of Installation
-                        <input type="date">
+                    <label>Date of Installation <span>*</span>
+                        <input type="date" required>
                     </label>
                 </fieldset>
                 

@@ -1,6 +1,6 @@
-const CURRENT_YEAR_SPAN = document.querySelector("#currentyear");
-const LAST_MODIFIED = document.querySelector("#lastModified");
+const currentYear = document.querySelector("#currentyear");
+const lastModified = document.querySelector("#lastModified");
 
-CURRENT_YEAR_SPAN.textContent = new Date().getFullYear();
-LAST_MODIFIED.textContent = document.lastModified;
+currentYear.textContent = new Date().getFullYear();
+lastModified.textContent = document.lastModified;
 
