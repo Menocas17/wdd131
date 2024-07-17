@@ -1,18 +1,91 @@
-@media (min-width: 1024px) { 
+@media (min-width: 600px) { 
+    .hero {
+        background-image: url(../images/hero-large-transformed.webp);
+        /* background-image: url(../images/hero-large-transformed-transformed-2.webp); */
+        
+        height: 85rem;
+        justify-content: flex-end;
+    
+    }
 
-    /* Styling the header */
+    .inscribete-button {
+        margin-bottom: 15rem;
+        margin-right: clamp(13rem, 14.5vw, 31rem);
+        
+          
+    }
+
     h1 {
         font-size: 5rem;
         margin: 1.5rem 0;
+    }
+    
+    h2 {
+        font-size: 2rem
     }
 
     h3 {
         font-size: 3.2rem;
     }
+
+
+    section {
+        font-size: 2rem;
+     }
+ 
+     .bold {
+         font-size: 2rem;
+     }
+ 
+     h2 span {
+         font-size: 4rem;
+     }
+ 
+     h2 {
+         font-size: 2rem;
+     }
+
+
+    .general-info-section.hotel-info h2 {
+        font-size: 3.2rem;
+ 
+    }
+
     .logo-name img {
         width: 6rem;
         height: 6rem;
     }
+
+    form {
+        width: 60%;
+        font-size: 2rem;
+    }
+    
+    form input,
+    form select,
+    form textarea {
+        font-size: 2rem;
+    }
+    
+    form span {
+        color: var(--secondaryColor);
+        font-size: 1.6rem;
+    }
+
+    section img {
+        width: 40rem;
+    }
+
+
+
+}
+   
+
+
+@media (min-width: 1024px) { 
+
+    /* Styling the header */
+
     
     .navegation-bar {
         display: flex;
@@ -114,7 +187,6 @@
     }
 
     .general-info-section.hotel-info h2 {
-        font-size: 3.2rem;
         margin-top: 0;
         margin-bottom: 5rem;
         margin-left: 2rem;
@@ -125,25 +197,13 @@
         width: 45rem;
     }
 
-/* stylign the form  */
 
-form {
-    width: 40%;
-    font-size: 2rem;
-}
+    
+    /* stylign the form  */
 
-form input,
-form select,
-form textarea {
-    font-size: 2rem;
-}
-
-form span {
-    color: var(--secondaryColor);
-    font-size: 1.6rem;
-}
-
-
+    form {
+        width: 40%;
+    }
 
 /* Styling the footer */
 
