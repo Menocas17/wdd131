@@ -8,6 +8,8 @@
     <meta name="author" content="Rodolfo Menocal">
     <link rel="stylesheet" href="styles/mobile-view.css">
     <link rel="stylesheet" href="styles/larger-view.css">
+    <link rel="preload" href="images/mobile-hero3-transformed-2.webp" as="image">
+    <link rel="preload" href="images/hero-large-transformed.webp" as="image">
     <script src="scripts/scritps.js" defer></script>
 
 </head>
@@ -43,7 +45,12 @@
                 del 6 al 11 de enero</h2> 
 
             <div class="general-info-section pfj-info">
-                <img src="images/youth.webp" alt="Un grupo de jovenes de una companhia del PFJ">
+
+                <picture>
+                    <source srcset="images/youth.webp" type="image/webp" media="(min-width: 600px)">
+                    <img loading="lazy" src="images/youth-small-300.webp" alt="Un grupo de jovenes de una companhia del PFJ" width="300">
+                </picture>
+                <!-- <img src="images/youth.webp" alt="Un grupo de jovenes de una companhia del PFJ" width="300"> -->
 
                 <p>
                     La Conferencia Para la Fortaleza de la Juventud (PFJ) es un campamento para jóvenes entre 14 y 18 años que consta de un programa cuidadosamente equilibrado de cinco días que incluye clases, devocionales y actividades centradas en la conversión de los pacticipantes al evangelio de Jesucristo. El lema del campamento de este año es <span class="bold">"He aquí, soy discípulo de Jesucristo, el Hijo de Dios. He sido llamado por él para declarar su palabra entre los de su pueblo, a fin de que alcancen la vida sempiterna. (3 Nefi 5: 13)"</span>
@@ -55,8 +62,15 @@
         </section>
         <section class="container">
 
+           
+
             <div class="general-info-section hotel-info">
-                <img src="images/hotel.webp" alt="Foto del hotel donde se llevara a cabo el PFJ">
+
+                <picture>
+                    <source srcset="images/hotel.webp" type="image/webp" media="(min-width: 600px)">
+                    <img src="images/hotel-small-300.webp" alt="Foto del hotel donde se llevara a cabo el PFJ" width="300">
+                </picture>
+                <!-- <img src="images/hotel.webp" alt="Foto del hotel donde se llevara a cabo el PFJ" width="300"> -->
 
                 <div>
                     <h2>Donde se lleva a cabo?</h2>
