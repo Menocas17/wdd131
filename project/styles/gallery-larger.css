@@ -1,0 +1,12 @@
+@media (min-width: 764px) { 
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    .modal-content {
+        width: 55rem;
+    }
+    
+
+}

@@ -1,0 +1,78 @@
+h2 {
+    font-size: 3.2rem;
+    text-align: center;
+    color: var(--secondaryColor);
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-bottom: 1px solid var(--secondaryColor);
+    max-width: 70%;
+}
+
+h3 {
+    margin-top: 4rem;
+}
+
+.gallery-content img {
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-content img:hover {
+    transform: scale(1.03);
+}
+
+.gallery-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    margin-top: 25rem;
+    width: 40rem;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 20px;
+}
+
+#gallery-close-button::before {
+    content: '✕';
+}
+
+#gallery-close-button{
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#gallery-close-button:hover {
+    background-color: red;
+    color: var(--white);
+}

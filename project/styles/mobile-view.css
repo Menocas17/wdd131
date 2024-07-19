@@ -243,7 +243,7 @@ form {
 
 h3 {
     text-align: center;
-    margin: 0 0 2rem 0;
+    margin: 0 0 3rem 0;
     color: var(--secondaryColor);
 }
 
@@ -290,6 +290,7 @@ form textarea {
 input[type=submit] {
     margin: 0 auto;
     margin-top: 3rem;
+    margin-bottom: 2rem;
     border: none;
     height: auto;
     width: 70%;
