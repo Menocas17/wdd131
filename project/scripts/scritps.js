@@ -112,7 +112,7 @@ function populateStaffContent (staff) {
         <div class="coordinadores-grid">
             <div>
                 <figure>
-                    <img loading="lazy" src="${staff.foto1}" alt="Foto de ${staff.nombre1}" >
+                    <img loading="lazy" src="${staff.foto1}" alt="Foto de ${staff.nombre1}" loading="lazy" >
                     <figcaption>${staff.nombre1}</figcaption>
                 </figure>
 
@@ -123,7 +123,7 @@ function populateStaffContent (staff) {
             
             <div>
                 <figure>
-                    <img loading="lazy" src="${staff.foto2}" alt="Foto de ${staff.nombre2}" >
+                    <img loading="lazy" src="${staff.foto2}" alt="Foto de ${staff.nombre2}" loading="lazy"  >
                     <figcaption>${staff.nombre2}</figcaption>
                 </figure>
 
@@ -139,7 +139,7 @@ function populateStaffContent (staff) {
 
         staffContent.innerHTML = `
             <figure>
-                <img loading="lazy" src="${staff.foto}" alt="Foto de ${staff.nombre}" >
+                <img loading="lazy" src="${staff.foto}" alt="Foto de ${staff.nombre}" loading="lazy" >
                 <figcaption>${staff.nombre}</figcaption>
             </figure>
 
@@ -422,6 +422,7 @@ if (window.location.pathname.includes('gallery.html')) {
             modal.classList.add('modal-show');
             modalImg.src = image.src;
             modalImg.alt = image.alt;
+            galleryImg.loading = 'lazy';
             captionText.innerHTML = image.alt;
         });
     });
