@@ -401,7 +401,7 @@ if (window.location.pathname.includes('gallery.html')) {
 
     images.forEach(image => {
         image.addEventListener('click', function() {
-            modal.style.display = 'block';
+            modal.classList.add('modal-show');
             modalImg.src = image.src;
             modalImg.alt = image.alt;
             captionText.innerHTML = image.alt;
@@ -409,7 +409,7 @@ if (window.location.pathname.includes('gallery.html')) {
     });
     
     galleryCloseBtn.addEventListener('click', function() {
-        modal.style.display = 'none';
+        modal.classList.remove ('modal-show')
     });
 }
 
