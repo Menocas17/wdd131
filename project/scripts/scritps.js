@@ -68,11 +68,6 @@ if (window.location.pathname.includes('staff.html')) {
         menuList.classList.toggle ('staff-menu-list-hidden');
         
     })
-
-    deployButton.addEventListener('click', () => {
-        menuList.classList.toggle ('staff-menu-list-hidden');
-        
-    })
     
 }
 
