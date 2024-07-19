@@ -111,6 +111,10 @@ h3 {
     color: #Fff;
 }
 
+.navegation-bar a {
+    text-decoration: none;
+}
+
 
 
 .nav-menu a {

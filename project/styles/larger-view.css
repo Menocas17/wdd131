@@ -80,6 +80,11 @@
 
 }
    
+@media (min-width: 720px) { 
+    .navegation-bar {
+        padding: 0 4rem;
+    }
+}
 
 
 @media (min-width: 1024px) { 
@@ -91,6 +96,7 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        padding: 0 1rem;
       
     }
 

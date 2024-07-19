@@ -1,0 +1,46 @@
+@media (min-width: 764px) { 
+
+    h2 {
+        font-size: 5rem;
+    }
+    .staff {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+        margin-top: 3rem;
+        min-height: 65rem;
+    }
+
+    .staff-content img {
+        width: 50rem;
+        max-height: 60rem;
+    }
+
+    .staff-content p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .staff-menu {
+        height: 28rem;
+    }
+
+    #staff-deploy-button {
+        display: none;
+    }
+
+    .staff-menu-list-hidden {
+        display: block;
+    }
+
+    .staff-content {
+        margin-top: 0;
+    }
+
+    .coordinadores-grid {
+        display: grid;
+        gap: 2rem;
+        /* grid-template-columns: repeat(2, 1fr); */
+    }
+    
+}
