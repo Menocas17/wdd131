@@ -296,6 +296,15 @@ input[type=submit] {
     width: 70%;
 }
 
+/* temporary styles for the login page  */ 
+
+.login h2{
+    text-align: center;
+    font-size: 5rem;
+    color: var(--secondaryColor);
+    margin: 31rem auto;
+}
+
 
 
 
