@@ -44,21 +44,21 @@ const menuList = document.querySelector('#staff-menu-list')
 let generalStaff = [
     {
         id: 'directoresS',
-        titulo: 'Matrimonio Director de Sesion',
+        titulo: 'Matrimonio Director de Sesión',
         nombre: 'Matrimonio Rivera Vicente',
         foto: 'images/staff/general/matrimonioDirector/directores.webp',
         bio: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nam odio ipsum soluta quisquam. Impedit eius voluptatem maxime, veritatis officia a suscipit blanditiis perferendis adipisci molestiae aliquam, explicabo consequuntur et earum doloribus saepe ad voluptatibus quia molestias placeat natus odit dolor corporis? Rerum qui quas, quaerat in, dolores impedit ducimus iusto, est possimus odit nisi quasi illum incidunt odio obcaecati minima. Adipisci vel quisquam voluptatum debitis laudantium! Dolore, facilis fugiat!" 
     },
     {
         id: 'directoresL',
-        titulo: 'Matrimonio Director de Logistica',
+        titulo: 'Matrimonio Director de Logística',
         nombre: 'Matrimonio Menocal Alonzo',
         foto: "images/staff/general/matrimonioLogistica/matrimoniologistica.webp",
         bio : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nam odio ipsum soluta quisquam. Impedit eius voluptatem maxime, veritatis officia a suscipit blanditiis perferendis adipisci molestiae aliquam, explicabo consequuntur et earum doloribus saepe ad voluptatibus quia molestias placeat natus odit dolor corporis? Rerum qui quas, quaerat in, dolores impedit ducimus iusto, est possimus odit nisi quasi illum incidunt odio obcaecati minima. Adipisci vel quisquam voluptatum debitis laudantium! Dolore, facilis fugiat!"
     },
     {
         id: 'coordinadores',
-        titulo: 'Coordinadores de Sesion',
+        titulo: 'Coordinadores de Sesión',
         nombre1: 'Michael Hernandez',
         nombre2: 'Stephanie Hernandez',
         foto1: "images/staff/general/coordinadoresSesion/michael.webp",
