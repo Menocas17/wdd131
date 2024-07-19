@@ -14,6 +14,24 @@ hamButton.addEventListener('click', ()=>{
 const currentYear = document.querySelector("#currentyear");
 currentYear.textContent = new Date().getFullYear();
 
+
+// adding some simulated funcionality to the submit button in the form 
+
+const formSubmitted = document.querySelector('#contact-form');
+let numMessages = Number(window.localStorage.getItem("numMessages")) || 0;
+
+if (window.location.pathname.includes('index.html')) {
+    
+    formSubmitted.addEventListener('submit', ()=> {
+        event.preventDefault();
+        numMessages ++;
+        localStorage.setItem('numMessages', numMessages);
+        alert(`Tu mensaje se ha enviado correctamente!\nHas enviado: ${numMessages} hasta ahora.`)
+
+    })
+    
+}
+
 // button and scripting for the staff menu
 
 const  deployButton = document.querySelector('#staff-deploy-button');
